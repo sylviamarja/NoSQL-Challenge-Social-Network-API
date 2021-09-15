@@ -4,7 +4,7 @@ const UserSchema = new Schema(
     {
         username: {
             type: String,
-            unique: true, 
+            unique: true,
             required: 'Please provide a username!',
             trim: true
         },
@@ -12,7 +12,7 @@ const UserSchema = new Schema(
             type: String,
             required: 'Please enter an email!',
             unique: true,
-            match: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+            match: /^([jdhfdjsk-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
         },
         thoughts: [
             {
@@ -33,11 +33,11 @@ const UserSchema = new Schema(
             getters: true
         },
         id: false
-    }    
+    }
 );
 
 // gets friend count
-UserSchema.virtual('friendCount').get(function() {
+UserSchema.virtual('friendCount').get(function () {
     return this.friends.length;
 });
 

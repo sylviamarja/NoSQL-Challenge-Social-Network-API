@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "npm start",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "mongodb": "^4.1.2",
-    "mongoose": "^6.0.5"
+    "mongoose": "^6.0.5",
+    "nodemon": "^2.0.12"
   },
   "devDependencies": {}
 }
